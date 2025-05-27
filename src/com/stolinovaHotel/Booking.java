@@ -67,7 +67,7 @@ public class Booking {
     }
 
     public String getDescriptionBokking() {
-        return getTypeOfvacation() + getGuest1() + "  pobyt od "+ getIn() + " do " + getOut();
+        return getTypeOfvacation() + getGuest1() +" Další host na pokoji: " +  getOtherGuest() + "  pobyt od "+ getIn() + " do " + getOut();
 
 
     }

@@ -13,6 +13,10 @@ public class Guest {
         this.birthday = birthday;
     }
 
+    public Guest(String name) {
+        this.name = name;
+    }
+
     public String getName() {
         return name;
     }
@@ -39,5 +43,14 @@ public class Guest {
     public String getDescriptionGuest() {
         return "Host: " + getName() + " " + ( getSurname() +" Datum narození " + getBirthday());
 
+    }
+
+    @Override
+    public String toString() {
+        return "Guest{" +
+                "name='" + name + '\'' +
+                ", surname='" + surname + '\'' +
+                ", birthday=" + birthday +
+                '}';
     }
 }
